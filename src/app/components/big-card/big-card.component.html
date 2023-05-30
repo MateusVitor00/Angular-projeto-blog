@@ -1,10 +1,10 @@
 <div class="container-big-card">
 
-<a href="https://ge.globo.com/futebol/brasileirao-serie-a/">
+<a [routerLink]="['content', Id]">
 
   <div class="big-card-image">
   <img
-  src="{{photoCover}}" alt=""
+  src="{{ photoCover }}" alt=""
   height="250px"
   width="398px"
   srcset="">
@@ -14,15 +14,13 @@
 
 
   <h1>
-    <a href="https://ge.globo.com/futebol/brasileirao-serie-a/">
     <div class="big-card-title">
-      <h1>{{cardTitle}}</h1>
+      <h1><a [routerLink]="['content', Id]">{{ cardTitle }}</a></h1>
     </div>
-  </a>
 </h1>
 
   <div class="big-card-description">
-    <p>{{cardDescription}}</p>
+    <p>{{ cardDescription }}</p>
   </div>
 
 </div>

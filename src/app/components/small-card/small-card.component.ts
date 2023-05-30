@@ -10,6 +10,8 @@ export class SmallCardComponent implements OnInit{
   photoCover:string=""
   @Input()
   cardTitle:string="Nova temporada de Loki a caminho"
+  @Input()
+  Id:string="0"
   constructor(){
 
   }
